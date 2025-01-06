@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram /> 
+
 # C# 0. Simple C# SQLite CRUD
 
 ### Repository ini berisi contoh bagaimana cara melakukan CRUD menggunakan SQLite di C#
