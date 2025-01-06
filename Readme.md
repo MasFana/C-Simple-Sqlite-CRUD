@@ -1,4 +1,4 @@
-# C# 0. Simple C# SQLite CRUD
+# C# Simple C# SQLite CRUD
 
 Repository ini berisi contoh bagaimana cara melakukan CRUD menggunakan SQLite di C#.  
 **Link Repository:** [C-Simple-Sqlite-CRUD](https://github.com/MasFana/C-Simple-Sqlite-CRUD)
