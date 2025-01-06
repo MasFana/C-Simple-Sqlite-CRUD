@@ -124,7 +124,9 @@ namespace TestingSQLITE
 			Console.Write("Kelas: ");
 			string kelas = Console.ReadLine() ?? string.Empty;
 
-			if (_siswaService.UpdateSiswa(id, nama, alamat, kelas))
+			var currentSiswa = _listSiswa.FirstOrDefault(x => x.Id == id);
+
+			if (currentSiswa!.UpdateSiswa(nama, alamat, kelas))
 			{
 				Console.WriteLine("Berhasil update data.");
 				RefreshSiswaList();
@@ -144,8 +146,10 @@ namespace TestingSQLITE
 				Console.WriteLine("Data tidak ditemukan.");
 				return;
 			}
+			
+			var currentSiswa = _listSiswa.FirstOrDefault(x => x.Id == id);
 
-			if (_siswaService.DeleteSiswa(id))
+			if (currentSiswa.DeleteSiswa())
 			{
 				Console.WriteLine("Berhasil delete data.");
 				RefreshSiswaList();
