@@ -23,7 +23,7 @@ namespace TestingSQLITE.Data
 			_connection.Close();
 		}
 	}
-
+	
 	static class Db
 	{
 		private static Connection _conn = new Connection();
